@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>About Us</title>
+    </head>
+    <link rel="stylesheet" href="css/about.css">
+
+    <div class="topnav">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="teams.html">Meet Our Team</a>
+        <a href="ourproduct.html">Products</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div><img src="image/banner logo.png" height="50px" style="position: absolute; top: 15px; left: 30px;"></div>
+
+    <body>
+
+      <audio autoplay>
+        <source src="audio/y2mate.com - Break From Toronto  PARTYNEXTDOOR  Lyric Video.mp3" type="audio/ogg">
+        <source src="audio/y2mate.com - Break From Toronto  PARTYNEXTDOOR  Lyric Video.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+        <video autoplay muted loop id="myVideo" style="margin-bottom: 10px;">
+            <source src="video/intro video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          
+          <div class="content">
+            <p>424 Motor Rental company has a rich history that spans several decades. It was founded in the year 2013 and has since become a popular choice amongst individuals and businesses seeking reliable transportation services. The company takes pride in its wide range of vehicles, ensuring that customers have the flexibility to choose the perfect vehicle for their needs. With a strong emphasis on customer satisfaction, 424 Motor Rental company has built a reputation for providing excellent service and competitive pricing. Over the years, the company has expanded its reach, establishing numerous branches across the country, catering to a diverse clientele.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+          </div>
+
+        <div class="row">
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p><h2 style="font-size: 34; padding-top: 105; text-align: center;">VISION</h2></p>
+              </div>
+              <div class="flip-card-back">
+                <p style="font-size: 20; padding-top: 110; text-align: center;">The vision of our company is to be a business that provides the best services in renting motorcycles.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p><h2 style="font-size: 36; padding-top: 105; text-align: center;">MISSION</h2></p>
+              </div>
+              <div class="flip-card-back">
+                <p style="font-size: 20; padding-top: 90; text-align: center;">The mission of our company is to:</p>
+                <ul style="padding-left: 120;">
+                    <li>Provide the best motorcycle service to customers.</li>
+                    <li>Attract more customers by providing good service.</li>
+                    <li>Maintain relationship with customers.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>  
+
+          <script>
+          var video = document.getElementById("myVideo");
+          var btn = document.getElementById("myBtn");
+          
+          function myFunction() {
+            if (video.paused) {
+              video.play();
+              btn.innerHTML = "Pause";
+            } else {
+              video.pause();
+              btn.innerHTML = "Play";
+            }
+          }
+          </script>
+          
+
+    </body>
+</html>
